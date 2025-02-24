@@ -1960,3 +1960,74 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* sal added */ 
+/* Global dark mode settings */
+.dark-mode {
+  background-color: #121212 !important;
+  color: cyan !important;
+}
+
+/* Apply dark mode styles to specific sections */
+.dark-mode .header,
+.dark-mode .footer,
+.dark-mode .hero,
+.dark-mode .about,
+.dark-mode .services,
+.dark-mode .contact,
+.dark-mode .portfolio,
+.dark-mode .resume,
+.dark-mode .skills,
+.dark-mode .testimonials {
+  background-color: #1a1a1a !important;
+  color: cyan !important;
+}
+
+/* Adjust text and link colors */
+.dark-mode a {
+  color: cyan !important;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: cyan !important;
+}
+
+/* Button styles for dark mode */
+.dark-mode .btn {
+  background: cyan !important;
+  color: #1a1a1a !important;
+  border: 1px solid cyan !important;
+}
+
+.dark-mode .btn:hover {
+  background: #1a1a1a !important;
+  color: cyan !important;
+}
+
+/* Navbar styles */
+.dark-mode .navmenu ul li a {
+  color: cyan !important;
+}
+
+/* Update Dark Mode Button */
+.dark-mode-btn {
+  background: #1a1a1a;
+  color: cyan;
+  border: 1px solid cyan;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+  background: cyan;
+  color: #1a1a1a;
+}
++

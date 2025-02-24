@@ -75,6 +75,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
 
       <div class="header-social-links">
         <a href="#" class="twitter">
@@ -984,6 +985,23 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  // sal added
+<script>
+  document.getElementById("darkModeToggle").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+
+  // Keep user preference for dark mode
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+</script>
 
 </body>
 

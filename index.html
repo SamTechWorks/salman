@@ -153,6 +153,33 @@ textarea::placeholder {
        color: grey !important;
 }
 
+
+
+/*changing text code*/
+     .text-animation span {
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      /* Centering elements on mobile */
+      /* Centering elements on mobile */
+      @media (max-width: 767.98px) {
+        .home-content h3{
+          text-align: center;
+        }
+        .social-icons, .btn-group {
+          justify-content: center;
+        }
+        h3.text-animation {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin-left:35px;
+        }
+        #changing-text{
+          margin-left: 15px;
+        }
+      }
 </style>
 
 </head>
@@ -244,8 +271,10 @@ textarea::placeholder {
 
         <div class="row align-items-center content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h2 style="color: #00D1FF">Crafting Digital Experiences with Security</h2>
-            <span style="color: #FF00D6"> within Cloud and AI</span>
+            <!-- <h2 style="color: #00D1FF">Crafting Digital Experiences with Security</h2>
+            <span style="color: #FF00D6"> within Cloud and AI</span> -->
+            <h1>Hi !! It's <span>Salman</span></h1>
+            <h3 class="text-animation">I'm a <br><span id="changing-text" class="text-md-start"></span></h3>
             <p class="lead">Transforming ideas into elegant solutions for real-time cybersecurity threat detection and
 automated security solutions.</p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
@@ -741,6 +770,24 @@ Architecture, Network Security</p>
       }
     });
   });
+
+  /* changing text */
+  
+    const textArray = ["Security Analyst", "Ethical Hacker", "Network Defender"];
+    let textIndex = 0;
+    const changingText = document.getElementById("changing-text");
+
+    function changeText() {
+      changingText.style.opacity = 0;
+      setTimeout(() => {
+        changingText.textContent = textArray[textIndex];
+        changingText.style.opacity = 1;
+        textIndex = (textIndex + 1) % textArray.length;
+      }, 500);
+    }
+
+    setInterval(changeText, 3000);
+  
 </script>
 
 </body>

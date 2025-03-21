@@ -44,13 +44,13 @@
       color: #858689;
     }
     /* Apply dark mode to the entire website */
-.dark-mode {
+/*.dark-mode {
   background-color: #121212;
   color: cyan;
-}
+}*/
 
 /* Ensure sections inherit dark mode styles */
-.dark-mode .header,
+/*.dark-mode .header,
 .dark-mode .footer,
 .dark-mode .hero,
 .dark-mode .about,
@@ -60,15 +60,15 @@
 .dark-mode .resume {
   background-color: #1a1a1a;
   color: cyan;
-}
+}*/
 
 /* Change links to cyan in dark mode */
-.dark-mode a {
+/*.dark-mode a {
   color: cyan;
-}
+}*/
 
 /* Adjust buttons in dark mode */
-.dark-mode .btn {
+/*.dark-mode .btn {
   background: cyan;
   color: #1a1a1a;
   border: 1px solid cyan;
@@ -77,15 +77,15 @@
 .dark-mode .btn:hover {
   background: #1a1a1a;
   color: cyan;
-}
+}*/
 
 /* Navbar adjustments */
-.dark-mode .navmenu ul li a {
+/*.dark-mode .navmenu ul li a {
   color: cyan !important;
 }
-
+*/
 /* Change dark mode button */
-.dark-mode-btn {
+/*.dark-mode-btn {
   background: #1a1a1a;
   color: cyan;
   border: 1px solid cyan;
@@ -124,21 +124,9 @@
   .dark-mode-btn:hover {
     background: cyan;
     color: #1a1a1a;
-  }
+  }*/
 
-.frame {
-    width: 11rem;
-    border-radius: 100%;
-    box-shadow: 0.104rem 0.07rem 0.875rem 0rem #FCFCFC;
-    transition: none;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    vertical-align: top;
-    width: 100%;
-}
+
 .Cert_icons_about{
   width: 100px;
   height: 100px;
@@ -250,7 +238,7 @@ textarea::placeholder {
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
         </svg>
       </nav>
-      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+      <!--<button id="darkModeToggle" class="dark-mode-btn">🌙</button>-->
 
       <div class="header-social-links">
         <a href="#" class="twitter">
@@ -781,28 +769,9 @@ Architecture, Network Security</p>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   
-  <!--sal added-->
+  
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const darkModeToggle = document.getElementById("darkModeToggle");
-    const body = document.body;
 
-    // Check localStorage for dark mode preference
-    if (localStorage.getItem("darkMode") === "enabled") {
-      body.classList.add("dark-mode");
-    }
-
-    // Toggle dark mode on button click
-    darkModeToggle.addEventListener("click", function () {
-      body.classList.toggle("dark-mode");
-
-      if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("darkMode", "enabled");
-      } else {
-        localStorage.setItem("darkMode", "disabled");
-      }
-    });
-  });
 
   /* changing text */
   
